@@ -1,0 +1,13 @@
+{
+  "name": "react-native-modal-picker",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "repository": "https://github.com/saitoxu/react-native-modal-picker.git",
+  "author": "Yosuke Saito",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "react": "^16.4.1",
+    "react-native": "^0.55.4"
+  }
+}
