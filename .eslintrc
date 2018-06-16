@@ -1,0 +1,65 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:react/recommended",
+    "prettier",
+    "prettier/react"
+  ],
+  "env": {
+    "react-native/react-native": true,
+    "jest/globals": true
+  },
+  "parser": "babel-eslint",
+  "plugins": [
+    "jest",
+    "react",
+    "react-native",
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        printWidth: 100,
+        trailingComma: none,
+        singleQuote: true,
+        semi: false
+      }
+    ],
+    "semi": ['error', 'never'],
+    "no-mixed-operators": 0,
+    "comma-dangle": 0,
+    "no-use-before-define": [
+      "error",
+      {
+        "variables": false,
+        "functions": false
+      }
+    ],
+    "no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "react/jsx-filename-extension": 0,
+    "react/sort-comp": [1, {
+      order: [
+        'type-annotations',
+        'static-methods',
+        'lifecycle',
+        'everything-else',
+        'render'
+      ],
+    }],
+    "react/prop-types": 0,
+    "react/display-name": 0,
+    "import/no-extraneous-dependencies": ["error",
+      {
+        "devDependencies": true,
+        "optionalDependencies": true,
+        "peerDependencies": true
+      }
+    ]
+  }
+}
